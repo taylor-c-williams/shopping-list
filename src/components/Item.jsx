@@ -8,7 +8,7 @@ export default function Item({ item, onChange, onDelete }) {
     itemContent = (
       <section>
         <input
-          placeholder={item.text}
+          value={item.text}
           onChange={(e) => {
             onChange({ ...item, text: e.target.value });
           }}

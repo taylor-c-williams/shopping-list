@@ -5,9 +5,9 @@ import List from '../components/List';
 const listNumber = 3;
 
 const itemsList = [
-  { id: 0, text: 'Meat 🍖', checked: false },
-  { id: 1, text: 'Potatoes 🥔', checked: false },
-  { id: 2, text: 'Broccoli 🥦', checked: false },
+  { id: 0, text: 'Kale', checked: false },
+  { id: 1, text: 'Apples', checked: false },
+  { id: 2, text: 'Tofu', checked: false },
 ];
 
 function listReducer(items, action) {
@@ -63,13 +63,13 @@ export default function ShoppingList() {
     });
   };
   return (
-    <>
+    <main>
       <Input onAddItem={handleAddItem} />
       <List
         items={items}
         onChangeItem={handleChangeItem}
         onDeleteItem={handleDeleteItem}
       />
-    </>
+    </main>
   );
 }
