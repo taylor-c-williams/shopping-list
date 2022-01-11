@@ -1,5 +1,15 @@
-import React from 'react';
+import Item from './Item';
 
-export default function List() {
-  return <div>I am a list component yay</div>;
+export default function List({ items, onChangeItem, onDeleteItem }) {
+  return (
+    <div>
+      <ul>
+        {items.map((item) => (
+          <li key={item.id}>
+            <Item item={item} onChange={onChangeItem} onDelete={onDeleteItem} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
