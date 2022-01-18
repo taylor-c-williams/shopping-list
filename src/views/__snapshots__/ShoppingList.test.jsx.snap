@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Should render the Input component 1`] = `undefined`;
+
+exports[`Should render the Item component 1`] = `undefined`;
+
+exports[`Should render the List component 1`] = `undefined`;
+
 exports[`should render the Shopping List view 1`] = `undefined`;

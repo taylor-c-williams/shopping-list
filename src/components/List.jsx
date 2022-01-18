@@ -1,8 +1,10 @@
+import React from 'react';
 import Item from './Item';
+import styles from './Item.css';
 
 export default function List({ items, onChangeItem, onDeleteItem }) {
   return (
-    <div>
+    <div className={styles.listContainter}>
       <ul>
         {items.map((item) => (
           <li key={item.id}>

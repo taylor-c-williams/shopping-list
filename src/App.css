@@ -22,16 +22,21 @@ main {
   font-family: 'Space Mono', monospace;
 }
 
+label {
+  cursor: pointer;
+  width: 500px;
+}
+
 input {
   display: inline;
   margin: 5px;
   font-family: 'Space Mono', monospace;
+  font-size: 1em;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -40,6 +45,8 @@ ul {
 li {
   padding: 10px;
   font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 p {
@@ -55,7 +62,7 @@ button {
   font-size: 1em;
   font-family: 'Space Mono', monospace;
   border: 1px dotted;
-  cursor: move;
+  cursor: pointer;
 }
 
 button:hover {
@@ -65,4 +72,5 @@ button:hover {
 button:active {
   background-color: purple;
   box-shadow: -3px 3px orange;
+  cursor: grab;
 }
