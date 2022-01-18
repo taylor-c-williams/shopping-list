@@ -5,7 +5,6 @@ export default function Input({ onAddItem }) {
   const [text, setText] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
-    setText('');
     onAddItem(text);
   };
   return (
